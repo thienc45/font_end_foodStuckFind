@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+
+App{
+  margin: auto 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.list {
+  flex: 1; /* Phần danh sách chiếm 2/3 chiều rộng */
+  overflow-y: auto; /* Cho phép cuộn nếu nội dung vượt quá kích thước */
+  margin-right: 30px;
+}
+
+.map {
+  flex: 2; /* Phần bản đồ chiếm 1/3 chiều rộng */
+}
