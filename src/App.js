@@ -4,7 +4,11 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 const App = () => {
   const [foodTrucks, setFoodTrucks] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+
+  // eslint-disable-next-line
   const [searchLocation, setSearchLocation] = useState("");
+
+  // eslint-disable-next-line
   const [mapCenter, setMapCenter] = useState({ lat: 37.7749, lng: -122.4194 });
 
   useEffect(() => {
@@ -22,6 +26,8 @@ const App = () => {
         console.error("There was a problem with your fetch operation:", error);
       });
   }, []);
+
+  
 
   const handleSearchInputChange = (event) => {
     setSearchQuery(event.target.value);
