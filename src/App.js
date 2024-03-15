@@ -12,7 +12,7 @@ const App = () => {
   const [mapCenter, setMapCenter] = useState({ lat: 37.7749, lng: -122.4194 });
 
   useEffect(() => {
-    // fetch("http://localhost:8081/api/food-trucks")
+    
     fetch("http://54.251.142.187:8081/api/food-trucks")
       .then((response) => {
         if (!response.ok) {
