@@ -1,0 +1,10 @@
+// .eslintrc.json
+{
+    "parserOptions": {
+      "ecmaVersion": 2018 // or higher, depending on your ES6 features usage
+    },
+    "rules": {
+      // Additional rules or overrides for ES6 syntax
+    }
+  }
+  
