@@ -11,50 +11,66 @@ SPA giúp phân chia rõ ràng code giữa frontend và backend => phát triển
 
 1. **Thực hiện dự án Google Maps App:**
 
-    - Cài đặt Create React App:
-    ```bash
-    npx create-react-app google-maps-app
-    cd google-maps-app
-    ```
+   - Cài đặt Create React App:
 
-    - Chạy ứng dụng React:
-    ```bash
-    npm start
-    ```
+   ```bash
+   npx create-react-app google-maps-app
+   cd google-maps-app
+   ```
 
-    Chạy ứng dụng và truy cập vào [http://localhost:3000](http://localhost:3000) để xem trình duyệt chạy ứng dụng của bạn.
+   - Chạy ứng dụng React:
 
-    - Cài đặt maps/api:
-    ```bash
-    npm install @react-google-maps/api
-    ```
+   ```bash
+   npm start
+   ```
 
-    Lấy keyApiMap để map hoạt động. Truy cập vào [trang](https://mapsplatform.google.com/) để tạo dự án và lấy API key map. Sau đó làm các bước sau:
-    - Nhấn vào dự án vừa tạo.
-    - Nhấn vào nút menu 3 gạch ngang.
-    - Chọn tab APIs & Services và vào Credentials.
-    - Chọn loại giấy mô tả phù hợp để sử dụng.
-    - Nhấn chọn vào API key để hiển thị cửa sổ API key.
+   Chạy ứng dụng và truy cập vào [http://localhost:3000](http://localhost:3000) để xem trình duyệt chạy ứng dụng của bạn.
 
+   - Cài đặt maps/api:
+
+   ```bash
+   npm install @react-google-maps/api
+   ```
+
+   Lấy keyApiMap để map hoạt động. Truy cập vào [trang](https://mapsplatform.google.com/) để tạo dự án và lấy API key map. Sau đó làm các bước sau:
+
+   - Nhấn vào dự án vừa tạo.
+     ![Alt text](image.png)
+   - Nhấn vào nút menu 3 gạch ngang.
+     ![Alt text](image-1.png)
+
+   - Chọn tab APIs & Services và vào Credentials.
+     ![Alt text](image-2.png)
+   - Chọn loại giấy mô tả phù hợp để sử dụng.
+     ![Alt text](image-3.png)
+   - Nhấn chọn vào API key để hiển thị cửa sổ API key.
+    //Em đang thiếu cách làm dự án ạ
 2. **Cách triển khai React JS với AWS EC2 (.pem For use with OpenSSH):**
 
-    - **Tạo và cấu hình máy chủ EC2:**
-        - Instances
-        - Launch an instance (để tạo key)
-        - Name and tags (e.g My Web server)
-        - Application and OS Images (Amazon Machine Image) chọn Amazon Machine Image (AMI)  
-        - Instance type t2.micro
-        - Key pair (login ) Info -> .pem For use with OpenSSH .ppk For use with PuTTY (Download OpenSSH, PuTTY để có thể đẩy code lên máy)
-        - Network settings -> để nguyên hoặc cấu hình
-        - Configure storage -> để nguyên hoặc cấu hình
-        - Advanced details -> để nguyên hoặc cấu hình
+   - **Tạo và cấu hình máy chủ EC2:**
 
-    - **Đẩy code lên máy ảo:**
-        - Đưa code của ứng dụng React lên máy chủ EC2 bằng cách clone git repository.
-        - Chạy lệnh npm install để cài đặt các phụ thuộc.
-        - Chạy lệnh npm run build để build ứng dụng React. Điều này sẽ tạo ra các tệp tĩnh trong thư mục build.
-        - Chạy ứng dụng trên máy ảo.
-        - Truy cập vào lại Instances chọn Instance ID tương ứng có Public IPv4 address hoặc Public IPv4 DNS kết hợp với API tương ứng (eg. http://54.251.142.187:8081/api/food-trucks or ec2-13-212-117-39.ap-southeast-1.compute.amazonaws.com:8081/api/food-trucks).
+     - Instances
+     - Launch an instance (để tạo key)
+     - Name and tags (e.g My Web server)
+     - Application and OS Images (Amazon Machine Image) chọn Amazon Machine Image (AMI)
+     - Instance type t2.micro
+     - Key pair (login ) Info -> .pem For use with OpenSSH .ppk For use with PuTTY (Download OpenSSH, PuTTY để có thể đẩy code lên máy)
+     - Network settings -> để nguyên hoặc cấu hình
+     - Configure storage -> để nguyên hoặc cấu hình
+     - Advanced details -> để nguyên hoặc cấu hình
+
+   - **Đẩy code lên máy ảo:**
+     - Đưa code của ứng dụng React lên máy chủ EC2 bằng cách clone git repository.
+     - Chạy lệnh npm install để cài đặt các phụ thuộc.
+     - Chạy lệnh npm run build để build ứng dụng React. Điều này sẽ tạo ra các tệp tĩnh trong thư mục build.
+     - Chạy ứng dụng trên máy ảo.
+     - Truy cập vào lại Instances chọn Instance ID tương ứng có Public IPv4 address hoặc Public IPv4 DNS kết hợp với API tương ứng (eg. http://54.251.142.187:8081/api/food-trucks or ec2-13-212-117-39.ap-southeast-1.compute.amazonaws.com:8081/api/food-trucks).
+  
+###
+[GitHub back_end_foodStuckfind](https://github.com/thienc45/back_end_foodStuckfind.git)
+[GitHub font_end_foodStuckfind](https://github.com/thienc45/font_end_foodStuckFind.git)
+[Video demo foodStuckfind](https://1drv.ms/v/s!AvdQFkUv6DA8oC1112avAniNuWEr?e=TsuKnS) 
+
 
 
 # Getting Started with Create React App
