@@ -45,33 +45,61 @@ SPA giúp phân chia rõ ràng code giữa frontend và backend => phát triển
      ![Alt text](image-3.png)
    - Nhấn chọn vào API key để hiển thị cửa sổ API key.
 
-   #### Code thực hiện project:
+ #### Code thực hiện project:
 
-   - Cài đặt Create React App:
-     ![Alt text](image-4.png)
+- **Cài đặt Create React App:**
 
-     - foodTrucks: tạo mảng trong useState có [].
-     - setFoodTrucks: để thay đổi giá trị mảng.
+  ![Alt text](image-4.png)
 
-     ![Alt text](image-5.png) + searchQuery: tạo chuỗi string rỗng useState có "" + setSearchQuery: để thay đổi giá trị searchQuery.
-     ![Alt text](image-6.png) + mapCenter: lưu mặc định trung tâm thành phố ({ lat: 37.7749, lng: -122.4194 }) + setMapCenter: để thay đổi mapCenter.
-     ![Alt text](image-7.png) + Dùng để call api dùng useState một hook của react
-     ![Alt text](image-8.png)
+- **useState hooks:**
+  - `foodTrucks`: được khởi tạo là một mảng rỗng `[]`.
+  - `setFoodTrucks`: được sử dụng để thay đổi giá trị của mảng `foodTrucks`.
 
-     - Một hàm để call api và bắt sự kiện qua input
-       Cả 2 đều dùng fetch api để nhận dữ liệu json từ backend để hiển thị
-       ![Alt text](image-9.png)
-     - Dùng onclick để bắt event từ input
-     - Dùng onchange để thay đổi giá trị không có gây lỗi
-       ![Alt text](image-10.png)
-       Load mảng phương thức map va trên api tương ứng
-       ![Alt text](image-11.png)
+  ![Alt text](image-5.png)
 
-   * LoadScript để sử dụng các tính năng của Google Maps API, GoogleMap tạo và tùy chỉnh bản đồ Google trên trang web, Marker là một đối tượng hoặc biểu tượng được hiển thị trên bản đồ Google để chỉ định vị trí cụ thể
-   * Truyền key lấy được ở trên
-   * Load mảng theo phương thức map va nhận api tương ứng
+- **useState hooks:**
+  - `searchQuery`: được khởi tạo là một chuỗi rỗng `""`.
+  - `setSearchQuery`: được sử dụng để thay đổi giá trị của `searchQuery`.
 
-1. **Cách triển khai React JS với AWS EC2 (.pem For use with OpenSSH):**
+  ![Alt text](image-6.png)
+
+- **useState hooks:**
+  - `mapCenter`: lưu trữ mặc định trung tâm của thành phố `{ lat: 37.7749, lng: -122.4194 }`.
+  - `setMapCenter`: được sử dụng để thay đổi giá trị của `mapCenter`.
+
+  ![Alt text](image-7.png)
+
+- **Sử dụng useState hook để gọi API:**
+  - Đây là cách sử dụng hook useState để gọi API.
+  - Hai hàm này đều sử dụng fetch API để nhận dữ liệu JSON từ backend để hiển thị.
+
+  ![Alt text](image-8.png)
+
+- **Hàm để gọi API và xử lý sự kiện từ input:**
+  - Dùng `onClick` để bắt sự kiện từ input.
+  - Dùng `onChange` để thay đổi giá trị mà không gây ra lỗi.
+
+  ![Alt text](image-9.png)
+
+- **Load và hiển thị dữ liệu từ API:**
+  - Sử dụng `map()` để lặp qua mảng và hiển thị dữ liệu từ API tương ứng.
+
+  ![Alt text](image-10.png)
+
+- **LoadScript, GoogleMap, Marker:**
+  - `LoadScript` được sử dụng để sử dụng các tính năng của Google Maps API.
+  - `GoogleMap` được sử dụng để tạo và tùy chỉnh bản đồ Google trên trang web.
+  - `Marker` là một đối tượng hoặc biểu tượng được hiển thị trên bản đồ Google để chỉ định vị trí cụ thể.
+
+  ![Alt text](image-11.png)
+
+- **Truyền API key lấy được từ trên:**
+  - Đây là cách truyền key API lấy được từ bước trước.
+
+- **Sử dụng `map()` để lặp qua mảng phương thức và hiển thị các Marker tương ứng từ API.**
+
+
+2. **Cách triển khai React JS với AWS EC2 (.pem For use with OpenSSH):**
 
    - **Tạo và cấu hình máy chủ EC2:**
 
