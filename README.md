@@ -45,32 +45,31 @@ SPA giúp phân chia rõ ràng code giữa frontend và backend => phát triển
      ![Alt text](image-3.png)
    - Nhấn chọn vào API key để hiển thị cửa sổ API key.
 
-   -Code thực hiện project:
+   #### Code thực hiện project:
 
    - Cài đặt Create React App:
      ![Alt text](image-4.png)
-     +foodTrucks: tạo mảng trong useState có [].
-     +setFoodTrucks: để thay đổi giá trị mảng.
 
--     ![Alt text](image-5.png)
-      +searchQuery: tạo chuỗi string rỗng  useState có ""
-      +setSearchQuery: để thay đổi giá trị searchQuery.
--     ![Alt text](image-6.png)
-      mapCenter: lưu mặc định trung tâm thành phố ({ lat: 37.7749, lng: -122.4194 })
-      setMapCenter: để thay đổi mapCenter.
--     ![Alt text](image-7.png)
-      Dùng để call api dùng useState một hook của react
-- ![Alt text](image-8.png)
-  Một hàm để call api và bắt sự kiện qua input
-  Cả 2 đều dùng fetch api để nhận dữ liệu json từ backend để hiển thị
-- ![Alt text](image-9.png)
-  Dùng onclick để bắt event từ input
-  DÙng onchange để thay đổi giá trị không có gây lỗi
-- ![Alt text](image-10.png)
-  Load mảng phương thức map va trên api tương ứng
--      ![Alt text](image-11.png)
-  Truyền key lấy được ở trên
-  Load mảng phương thức map va api tương ứng theo theo tọa độ
+     - foodTrucks: tạo mảng trong useState có [].
+     - setFoodTrucks: để thay đổi giá trị mảng.
+
+     ![Alt text](image-5.png) + searchQuery: tạo chuỗi string rỗng useState có "" + setSearchQuery: để thay đổi giá trị searchQuery.
+     ![Alt text](image-6.png) + mapCenter: lưu mặc định trung tâm thành phố ({ lat: 37.7749, lng: -122.4194 }) + setMapCenter: để thay đổi mapCenter.
+     ![Alt text](image-7.png) + Dùng để call api dùng useState một hook của react
+     ![Alt text](image-8.png)
+
+     - Một hàm để call api và bắt sự kiện qua input
+       Cả 2 đều dùng fetch api để nhận dữ liệu json từ backend để hiển thị
+       ![Alt text](image-9.png)
+     - Dùng onclick để bắt event từ input
+     - Dùng onchange để thay đổi giá trị không có gây lỗi
+       ![Alt text](image-10.png)
+       Load mảng phương thức map va trên api tương ứng
+       ![Alt text](image-11.png)
+
+   * LoadScript để sử dụng các tính năng của Google Maps API, GoogleMap tạo và tùy chỉnh bản đồ Google trên trang web, Marker là một đối tượng hoặc biểu tượng được hiển thị trên bản đồ Google để chỉ định vị trí cụ thể
+   * Truyền key lấy được ở trên
+   * Load mảng theo phương thức map va nhận api tương ứng
 
 1. **Cách triển khai React JS với AWS EC2 (.pem For use with OpenSSH):**
 
@@ -95,9 +94,11 @@ SPA giúp phân chia rõ ràng code giữa frontend và backend => phát triển
 
 ###
 
-[GitHub back_end_foodStuckfind](https://github.com/thienc45/back_end_foodStuckfind.git)
-[GitHub font_end_foodStuckfind](https://github.com/thienc45/font_end_foodStuckFind.git)
-[Video demo foodStuckfind](https://1drv.ms/v/s!AvdQFkUv6DA8oC1112avAniNuWEr?e=TsuKnS)
+- [GitHub back_end_foodStuckfind](https://github.com/thienc45/back_end_foodStuckfind.git)
+
+- [GitHub font_end_foodStuckfind](https://github.com/thienc45/font_end_foodStuckFind.git)
+
+- [Video demo foodStuckfind](https://1drv.ms/v/s!AvdQFkUv6DA8oC1112avAniNuWEr?e=TsuKnS)
 
 # Getting Started with Create React App
 
