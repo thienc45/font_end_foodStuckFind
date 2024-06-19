@@ -1,5 +1,5 @@
-import React, { Component, useState, useEffect } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import React, { useEffect, useState } from "react";
 
 const App = () => {
   const [foodTrucks, setFoodTrucks] = useState([]);
@@ -9,7 +9,7 @@ const App = () => {
   const [mapCenter, setMapCenter] = useState({ lat: 37.7749, lng: -122.4194 });
 
   useEffect(() => {
-    fetch("http://localhost:8081/api/food-trucks")
+    fetch("http://localhost:8081/api/foodtruct/food-trucks")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -25,15 +25,15 @@ const App = () => {
   }, []);
 
   const handleSearchInputChange = (event) => {
-    console.log(event.target.value)
+    console.log(event.target.value);
     setSearchQuery(event.target.value);
   };
 
   const handleSearch = () => {
     fetch(
-      `http://localhost:8081/api/food-trucks/search?locationDescription=${searchQuery}`
+      `http://localhost:8081/api/foodtruct/food-trucks/search?locationDescription=${searchQuery}`
     )
-    .then((response) => {
+      .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -62,7 +62,7 @@ const App = () => {
   };
 
   return (
-    <div className="App" >
+    <div className="App">
       <header className="App-header">
         <input
           type="text"
@@ -76,15 +76,16 @@ const App = () => {
       <div>
         <div className="container">
           <div className="list">
-          {Array.isArray(foodTrucks) && foodTrucks.map((foodTruck) =>  (
-              <div key={foodTruck.locationid}>
-                <h3>{foodTruck.applicant}</h3>
-                <p>{foodTruck.locationdescription}</p>
-                <p>{foodTruck.address}</p>
-                <p>{foodTruck.dayshours}</p>
-                <p>{foodTruck.fooditems}</p>
-              </div>
-            ))}
+            {Array.isArray(foodTrucks) &&
+              foodTrucks.map((foodTruck) => (
+                <div key={foodTruck.locationid}>
+                  <h3>{foodTruck.applicant}</h3>
+                  <p>{foodTruck.locationdescription}</p>
+                  <p>{foodTruck.address}</p>
+                  <p>{foodTruck.dayshours}</p>
+                  <p>{foodTruck.fooditems}</p>
+                </div>
+              ))}
           </div>
           <div className="map">
             <LoadScript googleMapsApiKey="AIzaSyBpJGOgFUdmK65piBRPh4pkmg0dSO8-YwA">
